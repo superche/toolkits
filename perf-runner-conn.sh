@@ -1,0 +1,1 @@
+ssh -o ProxyCommand='ssh -p 22 -i /Users/sche/.ssh/rogerz rogerz@34.218.88.71 -W %h:%p' -i /Users/sche/.ssh/performance_runner_key.pem ubuntu@192.168.116.165
