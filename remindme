@@ -1,0 +1,21 @@
+#!/bin/bash
+
+title=${1}
+delayByMin=${2}
+
+osascript - ${title} ${delayByMin} <<END
+on run args
+  tell app "Reminders"
+
+    set current to (current date)
+    set theDate to current + ((item 2 of args) * minutes)
+
+    set myList to list "MyList"
+    tell myList
+      set newReminder to (make new reminder)
+      set name of newReminder to (item 1 of args)
+      set remind me date of newReminder to theDate
+    end tell
+  end tell
+end
+END
