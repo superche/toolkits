@@ -1,0 +1,17 @@
+{
+    "editor.rulers": [80, 100],
+    "workbench.startupEditor": "newUntitledFile",
+    "javascript.implicitProjectConfig.experimentalDecorators": true,
+    "workbench.colorTheme": "FlatUI",
+    "editor.fontSize": 14,
+    "files.associations": {
+        "*.cjson": "jsonc",
+        "*.wxss": "css",
+        "*.wxs": "javascript"
+    },
+    "emmet.includeLanguages": {
+        "wxml": "html"
+    },
+    "minapp-vscode.disableAutoConfig": true,
+    "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace, 'Monoid Nerd Font Mono'"
+}
